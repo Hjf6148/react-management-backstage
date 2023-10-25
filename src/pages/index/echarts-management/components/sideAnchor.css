@@ -1,0 +1,15 @@
+.select-id {
+  color: #1677ff;
+  position: relative;
+}
+.select-id::after {
+  content: "";
+  border: none;
+  width: 2px;
+  height: 100%;
+  background-color: #1677ff;
+  position: absolute;
+  left: -8px;
+  top: 0;
+  z-index: 1;
+}
