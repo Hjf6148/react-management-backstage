@@ -55,3 +55,8 @@ export const formatTenThousand = (num?: number | string) => {
 export const formatTenThousandAmount = (num?: number | string) => {
   return formatAmount(formatTenThousand(num));
 };
+
+export const formatThousand = (num?: number | string) => {
+  if (!num && num !== 0) return "";
+  return `${num}`.replace(/\d{1,3}(?=(\d{3})+$)/g, (s) => `${s},`);
+};

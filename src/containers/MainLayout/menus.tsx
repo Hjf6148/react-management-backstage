@@ -20,7 +20,7 @@ export interface MenuGroupType extends Omit<MenuType, "children"> {
 const menus: MenuGroupType[] = [
   {
     key: "echarts",
-    label: "echarts管理",
+    label: "echarts 示例",
     icon: <AreaChartOutlined />,
     children: [
       {
@@ -52,6 +52,18 @@ const menus: MenuGroupType[] = [
         key: "other-charts",
         icon: <AreaChartOutlined />,
         label: "其他图表",
+      },
+    ],
+  },
+  {
+    key: "antd-charts",
+    label: "antV Charts 示例",
+    icon: <AreaChartOutlined />,
+    children: [
+      {
+        key: "line-charts",
+        icon: <LineChartOutlined />,
+        label: "折线图",
       },
     ],
   },
