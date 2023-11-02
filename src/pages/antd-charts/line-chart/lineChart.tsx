@@ -12,7 +12,10 @@ interface LineChartProps {
 const LineChart = ({ dataSource }: LineChartProps) => {
   const [lineData, setLineData] = useState<DataType[]>([]);
   useEffect(() => {
-    if (!dataSource?.length) return;
+    if (!dataSource?.length) {
+      setLineData([]);
+      return;
+    }
     const _hasValueList: number[] = [];
     dataSource.forEach((item) => {
       if (item.ratio1) _hasValueList.push(1);
@@ -28,7 +31,10 @@ const LineChart = ({ dataSource }: LineChartProps) => {
       if (item.ratio11) _hasValueList.push(11);
       if (item.ratio12) _hasValueList.push(12);
     });
-    if (!_hasValueList.length) return setLineData([]);
+    if (!_hasValueList.length) {
+      setLineData([]);
+      return;
+    }
     const _lineData = dataSource.reduce((prev, cur) => {
       const startIndex = Math.min(..._hasValueList);
       const endIndex = Math.max(..._hasValueList);
