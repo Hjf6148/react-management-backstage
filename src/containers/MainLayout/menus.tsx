@@ -61,9 +61,14 @@ const menus: MenuGroupType[] = [
     icon: <AreaChartOutlined />,
     children: [
       {
-        key: "line-charts",
+        key: "line-chart",
         icon: <LineChartOutlined />,
         label: "折线图",
+      },
+      {
+        key: "bar-chart",
+        icon: <BarChartOutlined />,
+        label: "柱状图",
       },
     ],
   },

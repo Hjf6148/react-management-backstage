@@ -109,11 +109,13 @@ const TableList = ({ dataSource }: TableListProps) => {
       },
     },
   ];
+
   return (
     <Table
       columns={columns}
       dataSource={dataSource}
       scroll={{ x: "max-content" }}
+      rowKey="id"
     />
   );
 };

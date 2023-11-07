@@ -2,6 +2,7 @@ import { Button, Card, Space } from "antd";
 import TableList from "./TableList";
 import LineChart from "./lineChart";
 import { useEffect, useState } from "react";
+import SubTitle from "../../../containers/SubTitle";
 
 export type DataItem = {
   id?: number;
@@ -82,20 +83,17 @@ const AntdLineChart = () => {
   return (
     <div>
       <Card>
-        <Space>
+        <Space className="mb-2.5">
           <Button onClick={() => setDataSource(initData)}>展示全部</Button>
-          <Button
-            onClick={() =>
-              setDataSource(initData.filter((_, index) => index === 0))
-            }
-          >
+          <Button onClick={() => setDataSource([initData[0]])}>
             仅展示第一条
           </Button>
         </Space>
         <TableList dataSource={dataSource} />
       </Card>
 
-      <Card className="mt-2.5" bodyStyle={{ padding: 16 }}>
+      <SubTitle>折线图：</SubTitle>
+      <Card bodyStyle={{ padding: 16 }}>
         <LineChart dataSource={dataSource} />
       </Card>
     </div>
