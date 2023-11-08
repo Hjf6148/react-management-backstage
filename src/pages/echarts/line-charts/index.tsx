@@ -1,6 +1,6 @@
-import { Button, Divider, Space } from "antd";
-import SideAnchor from "../components/SideAnchor";
+import { Button, Card, Space } from "antd";
 import { useEffect, useState } from "react";
+import SideAnchor from "../../../components/SideAnchor";
 import LineChart from "./LineChart";
 import AreaChart from "./AreaChart";
 
@@ -103,23 +103,21 @@ const LineCharts = () => {
         { id: "areaChart", title: "面积图" },
       ]}
     >
-      <div id="lineChart">
+      <Card id="lineChart" className="mb-2.5">
         <LineChart series={lineSeries} />
         <Space>
           <Button onClick={() => setLineSeries(_lineSeries1)}>data1</Button>
           <Button onClick={() => setLineSeries(_lineSeries2)}>data2</Button>
         </Space>
-      </div>
+      </Card>
 
-      <Divider />
-
-      <div id="areaChart">
+      <Card id="areaChart" className="mb-2.5">
         <AreaChart series={areaSeries} />
         <Space>
           <Button onClick={() => setAreaSeries(_areaSeries1)}>data1</Button>
           <Button onClick={() => setAreaSeries(_areaSeries2)}>data2</Button>
         </Space>
-      </div>
+      </Card>
     </SideAnchor>
   );
 };

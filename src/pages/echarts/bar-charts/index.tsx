@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import SideAnchor from "../components/SideAnchor";
-import { Button, Space } from "antd";
+import SideAnchor from "../../../components/SideAnchor";
+import { Button, Card, Space } from "antd";
 import BarChart from "./BarChart";
 
 const _barSeries1 = [
@@ -37,13 +37,13 @@ const BarCharts = () => {
 
   return (
     <SideAnchor items={[{ id: "barChart", title: "柱状图" }]}>
-      <div id="barChart">
+      <Card id="barChart" className="mb-2.5">
         <BarChart series={barSeries} />
         <Space>
           <Button onClick={() => setBarSeries(_barSeries1)}>data1</Button>
           <Button onClick={() => setBarSeries(_barSeries2)}>data2</Button>
         </Space>
-      </div>
+      </Card>
     </SideAnchor>
   );
 };

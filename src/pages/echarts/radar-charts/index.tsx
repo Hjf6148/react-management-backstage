@@ -1,6 +1,6 @@
-import { Button, Space } from "antd";
-import SideAnchor from "../components/SideAnchor";
+import { Button, Card, Space } from "antd";
 import { useEffect, useState } from "react";
+import SideAnchor from "../../../components/SideAnchor";
 import RadarChart from "./RadarChart";
 
 const _radarData1 = [
@@ -32,14 +32,14 @@ const RadarCharts = () => {
   }, []);
 
   return (
-    <SideAnchor items={[{ id: "barChart", title: "柱状图" }]}>
-      <div id="barChart">
+    <SideAnchor items={[{ id: "radarChart", title: "雷达图" }]}>
+      <Card id="radarChart" className="mb-2.5">
         <RadarChart data={radarData} />
         <Space>
           <Button onClick={() => setRadarData(_radarData1)}>data1</Button>
           <Button onClick={() => setRadarData(_radarData2)}>data2</Button>
         </Space>
-      </div>
+      </Card>
     </SideAnchor>
   );
 };

@@ -12,7 +12,7 @@ const NestedPiesChart = ({ data }: NestedPiesChartProps) => {
     if (cartRef.current) dispose(cartRef.current);
     const myChart = init(cartRef.current);
     const option: EChartsOption = {
-      title: { text: "环形图", subtext: "Doughnut Chart" },
+      title: { text: "环形图", subtext: "NestedPies Chart" },
       tooltip: { trigger: "item", formatter: "{a} <br/>{b}: {c} ({d}%)" },
       legend: {
         left: "center",

@@ -70,6 +70,16 @@ const menus: MenuGroupType[] = [
         icon: <BarChartOutlined />,
         label: "柱状图",
       },
+      {
+        key: "pie-chart",
+        icon: <PieChartOutlined />,
+        label: "饼图",
+      },
+      {
+        key: "other-chart",
+        icon: <AreaChartOutlined />,
+        label: "其他图表",
+      },
     ],
   },
 ];

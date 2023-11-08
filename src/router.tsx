@@ -13,6 +13,8 @@ import OtherCharts from "./pages/echarts/other-charts";
 
 import AntdLineChart from "./pages/antd-charts/line-chart";
 import AntdBarChart from "./pages/antd-charts/bar-chart";
+import AntdPieChart from "./pages/antd-charts/pie-chart";
+import AntdOtherChart from "./pages/antd-charts/other-chart";
 
 const router = createHashRouter([
   {
@@ -30,6 +32,8 @@ const router = createHashRouter([
 
       { path: "/antd-charts/line-chart", element: <AntdLineChart /> },
       { path: "/antd-charts/bar-chart", element: <AntdBarChart /> },
+      { path: "/antd-charts/pie-chart", element: <AntdPieChart /> },
+      { path: "/antd-charts/other-chart", element: <AntdOtherChart /> },
 
       {
         path: "*",

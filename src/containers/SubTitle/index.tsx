@@ -1,4 +1,6 @@
 import { PropsWithChildren } from "react";
+import { Typography } from "antd";
+import settings from "../../models/settings";
 
 type SubTitleProps = PropsWithChildren<{
   className?: string;
@@ -15,3 +17,18 @@ function SubTitle({
 }
 
 export default SubTitle;
+
+export const TypographyTitle = ({ title }: { title?: string }) => {
+  const [sizeType] = settings.useSizeType();
+  console.log(sizeType);
+  return (
+    <Typography.Title
+      level={4}
+      style={{
+        marginBottom: sizeType === "small" ? 12 : 0,
+      }}
+    >
+      {title}
+    </Typography.Title>
+  );
+};

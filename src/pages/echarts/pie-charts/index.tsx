@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
+import { Button, Card, Space } from "antd";
 import PieChart from "./PieChart";
-import { Button, Divider, Space } from "antd";
 import NestedPiesChart, { NestedPiesDataType } from "./NestedPiesChart";
 import DoughnutChart from "./DoughnutChart";
-import SideAnchor from "../components/SideAnchor";
 import NightingaleChart from "./NightingaleChart";
+import SideAnchor from "../../../components/SideAnchor";
 
 const _pieData1 = [
   { value: 1048, name: "Search Engine" },
@@ -111,27 +111,23 @@ const PieCharts = () => {
         { id: "nestedPiesChart", title: "嵌套环形图" },
       ]}
     >
-      <div id="pieChart">
+      <Card id="pieChart" className="mb-2.5">
         <PieChart data={pieData} />
         <Space>
           <Button onClick={() => setPieData(_pieData1)}>data1</Button>
           <Button onClick={() => setPieData(_pieData2)}>data2</Button>
         </Space>
-      </div>
+      </Card>
 
-      <Divider />
-
-      <div id="doughnutChart">
+      <Card id="doughnutChart" className="mb-2.5">
         <DoughnutChart data={doughnutData} />
         <Space>
           <Button onClick={() => setDoughnutData(_doughnutData1)}>data1</Button>
           <Button onClick={() => setDoughnutData(_doughnutData2)}>data2</Button>
         </Space>
-      </div>
+      </Card>
 
-      <Divider />
-
-      <div id="nightingaleChart">
+      <Card id="nightingaleChart" className="mb-2.5">
         <NightingaleChart data={nightingaleData} />
         <Space>
           <Button onClick={() => setNightingaleData(_nightingaleData1)}>
@@ -141,11 +137,9 @@ const PieCharts = () => {
             data2
           </Button>
         </Space>
-      </div>
+      </Card>
 
-      <Divider />
-
-      <div id="nestedPiesChart">
+      <Card id="nestedPiesChart" className="mb-2.5">
         <NestedPiesChart data={nestedPiesData} />
         <Space>
           <Button onClick={() => setNestedPiesData(_nestedPiesData1)}>
@@ -155,7 +149,7 @@ const PieCharts = () => {
             data2
           </Button>
         </Space>
-      </div>
+      </Card>
     </SideAnchor>
   );
 };

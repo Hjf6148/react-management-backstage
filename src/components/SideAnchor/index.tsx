@@ -1,5 +1,5 @@
 import { useCallback, useState } from "react";
-import "./sideAnchor.css";
+import "./index.css";
 
 type ItemsType = {
   id: string;

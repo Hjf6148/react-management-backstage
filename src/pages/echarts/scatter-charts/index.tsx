@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import SideAnchor from "../components/SideAnchor";
-import { Button, Space } from "antd";
+import { Button, Card, Space } from "antd";
+import SideAnchor from "../../../components/SideAnchor";
 import ScatterChart from "./ScatterChart";
 
 const _scatterSeries1 = [
@@ -88,8 +88,8 @@ const ScatterCharts = () => {
   }, []);
 
   return (
-    <SideAnchor items={[{ id: "barChart", title: "柱状图" }]}>
-      <div id="barChart">
+    <SideAnchor items={[{ id: "scatterChart", title: "散点图" }]}>
+      <Card id="scatterChart" className="mb-2.5">
         <ScatterChart series={scatterSeries} />
         <Space>
           <Button onClick={() => setScatterSeries(_scatterSeries1)}>
@@ -99,7 +99,7 @@ const ScatterCharts = () => {
             data2
           </Button>
         </Space>
-      </div>
+      </Card>
     </SideAnchor>
   );
 };

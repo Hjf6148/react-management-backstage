@@ -1,6 +1,6 @@
-import { Button, Divider, FloatButton, Space } from "antd";
-import SideAnchor from "../components/SideAnchor";
+import { Button, Card, FloatButton, Space } from "antd";
 import { useEffect, useState } from "react";
+import SideAnchor from "../../../components/SideAnchor";
 import SunburstChart from "./Sunburst";
 import ClockChart from "./ClockChart";
 import AnimatedSpeedGaugeChart from "./AnimatedSpeedGaugeChart";
@@ -165,29 +165,23 @@ const OtherCharts = () => {
         { id: "boxplotChart", title: "盒须图" },
       ]}
     >
-      <div id="sunburstChart">
+      <Card id="sunburstChart" className="mb-2.5">
         <SunburstChart data={pieData} />
         <Space>
           <Button onClick={() => setPieData(_sunburstData1)}>data1</Button>
           <Button onClick={() => setPieData(_sunburstData2)}>data2</Button>
         </Space>
-      </div>
+      </Card>
 
-      <Divider />
-
-      <div id="clockChart">
+      <Card id="clockChart" className="mb-2.5">
         <ClockChart />
-      </div>
+      </Card>
 
-      <Divider />
-
-      <div id="animatedSpeedGaugeChart">
+      <Card id="animatedSpeedGaugeChart" className="mb-2.5">
         <AnimatedSpeedGaugeChart />
-      </div>
+      </Card>
 
-      <Divider />
-
-      <div id="candlestickChart">
+      <Card id="candlestickChart" className="mb-2.5">
         <CandlestickChart data={candlestickData} />
         <Space>
           <Button onClick={() => setCandlestickData(_candlestickData1)}>
@@ -197,13 +191,11 @@ const OtherCharts = () => {
             data2
           </Button>
         </Space>
-      </div>
+      </Card>
 
-      <Divider />
-
-      <div id="boxplotChart">
+      <Card id="boxplotChart" className="mb-2.5">
         <BoxplotChart />
-      </div>
+      </Card>
 
       <FloatButton.BackTop visibilityHeight={52} />
     </SideAnchor>
