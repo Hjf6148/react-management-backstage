@@ -1,10 +1,13 @@
 import {
   AreaChartOutlined,
   BarChartOutlined,
+  BulbOutlined,
   DotChartOutlined,
   LineChartOutlined,
+  PictureOutlined,
   PieChartOutlined,
   RadarChartOutlined,
+  StarOutlined,
 } from "@ant-design/icons";
 import { MenuItemType } from "antd/es/menu/hooks/useItems";
 
@@ -79,6 +82,30 @@ const menus: MenuGroupType[] = [
         key: "other-chart",
         icon: <AreaChartOutlined />,
         label: "其他图表",
+      },
+    ],
+  },
+  {
+    key: "carousel",
+    label: "走马灯",
+    icon: <PictureOutlined />,
+    children: [
+      {
+        key: "antd-carousel",
+        icon: <PictureOutlined />,
+        label: "antd 走马灯",
+      },
+    ],
+  },
+  {
+    key: "css-styles",
+    label: "各式样式",
+    icon: <StarOutlined />,
+    children: [
+      {
+        key: "whimsy",
+        icon: <BulbOutlined />,
+        label: "奇思妙想",
       },
     ],
   },

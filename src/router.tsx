@@ -16,6 +16,10 @@ import AntdBarChart from "./pages/antd-charts/bar-chart";
 import AntdPieChart from "./pages/antd-charts/pie-chart";
 import AntdOtherChart from "./pages/antd-charts/other-chart";
 
+import AntdCarousel from "./pages/carousel/antd-carousel";
+
+import Whimsy from "./pages/css-styles/whimsy";
+
 const router = createHashRouter([
   {
     element: <Root />,
@@ -34,6 +38,10 @@ const router = createHashRouter([
       { path: "/antd-charts/bar-chart", element: <AntdBarChart /> },
       { path: "/antd-charts/pie-chart", element: <AntdPieChart /> },
       { path: "/antd-charts/other-chart", element: <AntdOtherChart /> },
+
+      { path: "/carousel/antd-carousel", element: <AntdCarousel /> },
+
+      { path: "/css-styles/whimsy", element: <Whimsy /> },
 
       {
         path: "*",
