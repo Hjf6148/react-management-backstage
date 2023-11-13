@@ -20,7 +20,7 @@ const SideAnchor = ({ items, children }: SideAnchorProps) => {
 
   return items?.length ? (
     <div className="flex">
-      <div className="flex-auto pr-3 box-border">{children}</div>
+      <div className="flex-1 pr-3 box-border">{children}</div>
       <div className="relative bg-white pl-2 pr-4 pt-3 pb-4 border-solid border-gray-200 border-0 border-l">
         <div
           className="sticky z-0 top-4"
