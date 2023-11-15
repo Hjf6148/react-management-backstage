@@ -1,3 +1,7 @@
+html {
+  /* 页面滚动条滑动 */
+  scroll-behavior: smooth;
+}
 .select-id {
   color: #1677ff;
   position: relative;
