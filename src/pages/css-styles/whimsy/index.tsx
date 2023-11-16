@@ -1,6 +1,7 @@
 import { Tabs } from "antd";
 import GradientColors from "./GradientColors";
 import InteractButtons from "./InteractButtons";
+import MouseIcon from "./MouseIcon";
 
 /** css 奇思妙想 */
 const Whimsy = () => {
@@ -9,6 +10,7 @@ const Whimsy = () => {
       defaultActiveKey="gradientColors"
       tabPosition="left"
       tabBarStyle={{ backgroundColor: "white", padding: "12px 0" }}
+      destroyInactiveTabPane
       items={[
         {
           key: "gradientColors",
@@ -19,6 +21,11 @@ const Whimsy = () => {
           key: "interactButtons",
           label: "交互按钮",
           children: <InteractButtons />,
+        },
+        {
+          key: "mouseIcon",
+          label: "自定义鼠标指针",
+          children: <MouseIcon />,
         },
       ]}
     />
