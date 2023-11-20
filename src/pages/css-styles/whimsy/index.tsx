@@ -2,6 +2,7 @@ import { Tabs } from "antd";
 import GradientColors from "./GradientColors";
 import InteractButtons from "./InteractButtons";
 import MouseIcon from "./MouseIcon";
+import Pets from "./DesktopPets";
 
 /** css 奇思妙想 */
 const Whimsy = () => {
@@ -26,6 +27,11 @@ const Whimsy = () => {
           key: "mouseIcon",
           label: "自定义鼠标指针",
           children: <MouseIcon />,
+        },
+        {
+          key: "desktopPets",
+          label: "桌宠",
+          children: <Pets />,
         },
       ]}
     />
