@@ -1,0 +1,20 @@
+.pets-container {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.pets-container .pets-interaction {
+  display: none;
+  position: absolute;
+  z-index: 99;
+  top: 0;
+  /* background-color: #fff; */
+  text-align: right;
+  min-width: max-content;
+}
+
+.pets-container:hover .pets-interaction {
+  display: block;
+}

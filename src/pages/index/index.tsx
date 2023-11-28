@@ -1,5 +1,5 @@
 import { Navigate } from "react-router-dom";
 
 export default function Index() {
-  return <Navigate to="/echarts/line-charts" replace />;
+  return <Navigate to="/css-styles/whimsy" replace />;
 }

@@ -187,3 +187,43 @@
     opacity: 0;
   }
 }
+
+.btn7 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  position: relative;
+}
+.btn7 .btn7-text {
+  padding: 12px 24px;
+  /* font-size: 16px; */
+  color: #000;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  background: rgba(0, 73, 88, 0.05);
+  backdrop-filter: blur(15px);
+  cursor: pointer;
+  z-index: 1;
+  transition: 0.2s;
+}
+.btn7::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -5px;
+  width: 25%;
+  height: 10px;
+  background: #00c2cb;
+  border-radius: 10px;
+  transition: 0.5s;
+  box-shadow: 0 0 10px rgba(0, 194, 203, 0.5);
+}
+.btn7:hover::before {
+  bottom: 0;
+  height: 40%;
+  width: 90%;
+  border-radius: 30px;
+  transition-delay: 0.5s;
+}

@@ -53,6 +53,14 @@ const InteractButtons = () => {
         </button>
       ),
     },
+    {
+      title: "发光微交互",
+      button: (
+        <button className="btn7">
+          <span className="btn7-text">Click me</span>
+        </button>
+      ),
+    },
   ];
 
   return (
