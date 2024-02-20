@@ -3,6 +3,7 @@ import GradientColors from "./GradientColors";
 import InteractButtons from "./InteractButtons";
 import MouseIcon from "./MouseIcon";
 import Pets from "./DesktopPets";
+import Rainbow from "./Rainbow";
 
 /** css 奇思妙想 */
 const Whimsy = () => {
@@ -32,6 +33,11 @@ const Whimsy = () => {
           key: "desktopPets",
           label: "桌宠",
           children: <Pets />,
+        },
+        {
+          key: "rainbow",
+          label: "彩虹",
+          children: <Rainbow />,
         },
       ]}
     />
