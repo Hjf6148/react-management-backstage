@@ -4,6 +4,7 @@ import InteractButtons from "./InteractButtons";
 import MouseIcon from "./MouseIcon";
 import Pets from "./DesktopPets";
 import Rainbow from "./Rainbow";
+import RoundArcGradient from "./RoundArcGradient";
 
 /** css 奇思妙想 */
 const Whimsy = () => {
@@ -38,6 +39,11 @@ const Whimsy = () => {
           key: "rainbow",
           label: "彩虹",
           children: <Rainbow />,
+        },
+        {
+          key: "roundArcGradient",
+          label: "圆/弧/渐变",
+          children: <RoundArcGradient />,
         },
       ]}
     />
