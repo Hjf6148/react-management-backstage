@@ -1,4 +1,4 @@
-import { Card } from "antd";
+import { Card, Space } from "antd";
 
 const RoundArcGradient = () => {
   return (
@@ -25,20 +25,32 @@ const RoundArcGradient = () => {
         />
       </Card>
 
-      <Card className="mb-2.5">
-        <div className="mb-2 text-base">
-          <h5>Server图标</h5>
-        </div>
-        <div className="w-[100px] h-[100px] box-border rounded-full border-[#0000FF4C] border-solid border-[10px] border-t-white border-b-white relative before:absolute before:content-[''] before:w-[60px] before:h-[60px] before:border-[10px] before:box-border before:border-solid before:border-[#0000FF99] before:border-t-white before:border-b-white before:rounded-full before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:z-[1] after:content-[''] after:absolute after:w-5 after:h-5 after:bg-[#0000ff] after:rounded-full after:z-[2] after:left-1/2 after:top-1/2 after:-translate-x-1/2 after:-translate-y-1/2" />
-      </Card>
-
       <Card>
         <div className="mb-2 text-base">
           <h5>渐变箭头</h5>
         </div>
-        <div className="relative w-[60px] h-[52px] bg-gradient-to-r from-[#90EE90] to-[#008000]">
-          <div className="before:absolute before:content-[''] before:z-10 before:top-0 before:right-0 before:border-solid before:border-white before:border-l-transparent before:border-b-transparent before:border-x-[8px] before:border-y-[13px] after:absolute after:content-[''] after:z-10 after:bottom-0 after:right-0 after:border-solid after:border-white after:border-t-transparent after:border-l-transparent after:border-x-[8px] after:border-y-[13px]" />
-          <div className="before:absolute before:content-[''] before:z-10 before:w-[44px] before:h-[14px] before:top-0 before:left-0 before:bg-white after:absolute after:content-[''] after:z-10 after:w-[44px] after:h-[14px] after:bottom-0 after:left-0 after:bg-white" />
+        <div>
+          <Space>
+            <div className="relative w-[60px] h-[52px] bg-gradient-to-r from-[#90EE90] to-[#008000]">
+              <div className="before:absolute before:content-[''] before:z-10 before:top-0 before:right-0 before:border-solid before:border-white before:border-l-transparent before:border-b-transparent before:border-x-[8px] before:border-y-[13px] after:absolute after:content-[''] after:z-10 after:bottom-0 after:right-0 after:border-solid after:border-white after:border-t-transparent after:border-l-transparent after:border-x-[8px] after:border-y-[13px]" />
+              <div className="before:absolute before:content-[''] before:z-10 before:w-[44px] before:h-[14px] before:top-0 before:left-0 before:bg-white after:absolute after:content-[''] after:z-10 after:w-[44px] after:h-[14px] after:bottom-0 after:left-0 after:bg-white" />
+            </div>
+
+            <div className="relative w-[60px] h-[52px] bg-gradient-to-l from-[#90EE90] to-[#008000]">
+              <div className="before:absolute before:content-[''] before:z-10 before:top-0 before:left-0 before:border-solid before:border-white before:border-r-transparent before:border-b-transparent before:border-x-[8px] before:border-y-[13px] after:absolute after:content-[''] after:z-10 after:bottom-0 after:left-0 after:border-solid after:border-white after:border-t-transparent after:border-r-transparent after:border-x-[8px] after:border-y-[13px]" />
+              <div className="before:absolute before:content-[''] before:z-10 before:w-[44px] before:h-[14px] before:top-0 before:right-0 before:bg-white after:absolute after:content-[''] after:z-10 after:w-[44px] after:h-[14px] after:bottom-0 after:right-0 after:bg-white" />
+            </div>
+
+            <div className="relative w-[52px] h-[60px] bg-gradient-to-b from-[#90EE90] to-[#008000]">
+              <div className="before:absolute before:content-[''] before:z-10 before:bottom-0 before:left-0 before:border-solid before:border-white before:border-r-transparent before:border-t-transparent before:border-x-[13px] before:border-y-[8px] after:absolute after:content-[''] after:z-10 after:bottom-0 after:right-0 after:border-solid after:border-white after:border-t-transparent after:border-l-transparent after:border-x-[13px] after:border-y-[8px]" />
+              <div className="before:absolute before:content-[''] before:z-10 before:w-[14px] before:h-[44px] before:top-0 before:left-0 before:bg-white after:absolute after:content-[''] after:z-10 after:w-[14px] after:h-[44px] after:top-0 after:right-0 after:bg-white" />
+            </div>
+
+            <div className="relative w-[52px] h-[60px] bg-gradient-to-t from-[#90EE90] to-[#008000]">
+              <div className="before:absolute before:content-[''] before:z-10 before:top-0 before:left-0 before:border-solid before:border-white before:border-r-transparent before:border-b-transparent before:border-x-[13px] before:border-y-[8px] after:absolute after:content-[''] after:z-10 after:top-0 after:right-0 after:border-solid after:border-white after:border-b-transparent after:border-l-transparent after:border-x-[13px] after:border-y-[8px]" />
+              <div className="before:absolute before:content-[''] before:z-10 before:w-[14px] before:h-[44px] before:bottom-0 before:left-0 before:bg-white after:absolute after:content-[''] after:z-10 after:w-[14px] after:h-[44px] after:bottom-0 after:right-0 after:bg-white" />
+            </div>
+          </Space>
         </div>
       </Card>
     </div>

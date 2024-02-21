@@ -5,6 +5,7 @@ import MouseIcon from "./MouseIcon";
 import Pets from "./DesktopPets";
 import Rainbow from "./Rainbow";
 import RoundArcGradient from "./RoundArcGradient";
+import VariousIcons from "./VariousIcons";
 
 /** css 奇思妙想 */
 const Whimsy = () => {
@@ -44,6 +45,11 @@ const Whimsy = () => {
           key: "roundArcGradient",
           label: "圆/弧/渐变",
           children: <RoundArcGradient />,
+        },
+        {
+          key: "variousIcons",
+          label: "各种图标",
+          children: <VariousIcons />,
         },
       ]}
     />
